@@ -6,6 +6,41 @@ Online as slide show at http://solsort.com/2013/berlincompiler
 
 ## Content
 
+- talk
+    - intro
+        - intro
+            - this talk: interactive, interrupt, ask questions
+            - my background
+        - vision: the next billion
+        - idea: canonical syntax
+            - homoiconicity to the next level - source text as a serialisation format for the AST
+            - designed for code transformations
+            - practical experiments: Yolan and LightScript
+            - have you seen this idea before? where?
+    - concrete experiments
+        - lightscript/yolan
+            - JavaScript/lisp-like language on J2ME
+        - yolan 2
+            - self-hosted
+            - visual code
+            - hosted on the JS-vm
+            - method-calls instead of function calls
+            - `[code]`
+            - experience: dogfood not good enough, lists not rich enough
+        - lightscript 2/3
+            - Combined TDOP-parser + prettyprinter for JS/C-like language
+            - self-hosted
+            - staged computation
+            - towards common scripting language denominator
+            - `[code]`
+            - experience: dogfood currently just limited JS, want optional static typing, non-js-semantics, newline-comment-node
+    - conclusion / discussion
+        - next step: Yolan 3
+        - discussion: critical feedback
+        - discussion: language features
+
+
+
 - This talk
     - interactive, interrupt, ask questions
 - Background
@@ -13,25 +48,45 @@ Online as slide show at http://solsort.com/2013/berlincompiler
     - homoiconicity to the next level - source text as a serialisation format for the AST
     - designed for code transformations
     - practical experiments: Yolan and LightScript
+    - have you seen this idea before? where?
 - Vision
-    - programming for the next billion computing device users
-    - textual code representation not enough
+    - programming for the next billion
+    - textual code representation will not suffice
+    - platform is mobile
+    - personal tool, eat-my-own-dogfood
+- Experiment: LightScript/Yolan
+    - 
 - Experiment: Yolan 2
     - self-hosted
     - visual code
     - hosted on the JS-vm
+    - method-calls instead of function calls
+    - experience: dogfood not good enough, lists not rich enough
 - Experiment: LightScript 2/3
     - Combined TDOP-parser + prettyprinter for JS/C-like language
     - self-hosted
     - staged computation
+    - towards common scripting language denominator
+    - experience: dogfood currently just limited JS, want optional static typing, non-js-semantics, newline-comment-node
 - .. Top-down operator precedence
-- Future: Yolan 3
+- Wanted dogfood: Yolan 3
+    - hosted on common scripting language denominator
+        - portable core + platform specific extensions
     - JS-to-Yolan
     - optional static typing
-    - hosted on common scripting language denominator
 - discussion
+    - your opinion? Critical feedback?
+    - what are your favorite language features, why?
+    - your opinion?
+    - your opinion on language feature/design-must-have
+    - what do you think
     - what are your critical 
 - Extras
+    - generational GC
+    - theaded code / interpreter
+        - direct threaded vs. indirect threaded
+    - inline caching
+    - partial evaluation
 
 - intro
     - form: informal
