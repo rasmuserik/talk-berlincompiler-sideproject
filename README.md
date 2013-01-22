@@ -6,6 +6,33 @@ Online as slide show at http://solsort.com/2013/berlincompiler
 
 ## Content
 
+- This talk
+    - interactive, interrupt, ask questions
+- Background
+- Canonical syntax
+    - homoiconicity to the next level - source text as a serialisation format for the AST
+    - designed for code transformations
+    - practical experiments: Yolan and LightScript
+- Vision
+    - programming for the next billion computing device users
+    - textual code representation not enough
+- Experiment: Yolan 2
+    - self-hosted
+    - visual code
+    - hosted on the JS-vm
+- Experiment: LightScript 2/3
+    - Combined TDOP-parser + prettyprinter for JS/C-like language
+    - self-hosted
+    - staged computation
+- .. Top-down operator precedence
+- Future: Yolan 3
+    - JS-to-Yolan
+    - optional static typing
+    - hosted on common scripting language denominator
+- discussion
+    - what are your critical 
+- Extras
+
 - intro
     - form: informal
     - background
@@ -68,9 +95,12 @@ Online as slide show at http://solsort.com/2013/berlincompiler
         - inline caching
         - partial evaluation
 
-
 ## Presentation style
 
+- focus areas
+    - vision
+    - technical/language-stuff
+    - personal conclusion / journey
 - switch between 3 screens
     - vim scratchpad
     - reveal.js slide show
