@@ -39,68 +39,131 @@
             <div class="slides">
 
                 <section>
-                <h1 style="font-size: 200%">Programming Language Experiments</h1>
+                <h1 style="font-size: 250%; line-height: 95%">Language experiments and ideas</h1>
                 <p style="margin-top: 2ex"> <small>2013.01.22<br/><a href="http://berlin.compilermeet.org/">Berlin Compiler Meetup</a> talk by <a href="http://rasmuserik.com">Rasmus Erik</a></small> </p>
                 </section>
 
 
                 <section>
-                    <h3>What</h3>
-                    Programming language experiments: Canonical syntax
-                    <h3 style="margin-top: 1ex">How</h3>
-                    Interactive, - <strong>interrupt</strong>, ask questions :)
-                    <h3 style="margin-top: 1ex">Why</h3>
-                    Share idea, gather feedback
-                </section>
-
                 <section>
-                <ul>
-                    <li>Background</li>
-                    <li>Canonical syntax</li>
+                <h3>Content</h3>
+                <ul style="font-size: 120%; line-height: 150%;">
+                    <li><strong>Introduction</strong>:
+                    About the talk, a Vision, <br/> and an Idea: "Canonical syntax"</li>
+                    <li>Language experiments</li>
+                    <li>Conclusion and discussion</li>
                 </ul>
                 </section>
 
-
                 <section>
-                    <h3>Idea: Canonical Syntax</h3>
-                    <ul>
-                        <li>homoiconicity to the next level - source text as a serialisation format for the AST.</li>
-                        <li>practical implementation: combined parser / prettyprinter for JS/C-like language family</li>
-                        <li></li>
-                    </ul>
-                    <p>Programming language for the next billion :)</p>
-                    <h3>Idea: Canonical syntax</h3>
-                </section>
-
-                <section>
-                    <h3>Experiment: Yolan 2</h3>
-                    <ul>
-                    </ul>
-                </section>
-
-
-
-                <section>
-                <h3>Background</h3>
+                <h3>About</h3>
                 <ul>
-                    <li>Rasmus Erik <ul>
-                        <li>freelance computer scientist from Copenhagen. JavaScript-engines, partial-evaluator backend, ...</li>
-                    </ul></li>
-                    <li style="margin-top: 1ex">Language Experiments
-                    <ul>
-                        <li>LightScript/Yolan: JavaScript/Lisp-dialects on J2ME (part of master thesis)</li>
-                        <li>Yolan 2: Lisp canonical syntax (on JS); self hosted, minimal syntax</li>
-                        <li>LightScript 2/3: canonical syntax for subset of JS; var inference; staged; self hosted</li>
-                    </ul>
-                    </li>
+                    <li>The talk<ul><li>Informal, interactive - <strong>interrupt</strong>, ask questions</li></ul></li>
+                    <li>Rasmus Erik<ul><li>Freelance Computer Scientist from Copenhagen. JavaScript-engines, Tempo, Yolan/LightScript, ...</li></ul></li>
+                    <li>The content<ul><li>Share ideas. New stuff. Get feedback.</li></ul></li>
                 </ul>
                 </section>
 
+                <section>
+                <h3>Vision</h3>
+                <ul style="line-height: 150%">
+                    <li>Next billion internet users are mobile-only</li>
+                    <li>Enable software development on mobile</li>
+                    <li>Source code as text only will not suffice</li>
+                </ul>
+                </section>
 
                 <section>
-                <h2 style="margin-bottom: 4ex">Questions...</h2>
-                <small>Feedback on the presentation is very welcome, <br/>
-                    Rasmus Erik <script>document.write("&#64;");</script> solsort.dk</small>
+                <h3>Idea: Canonical Syntax</h3>
+                <ul>
+                    <li>Homoiconicity to the next level: source text as a serialisation format for the AST.</li>
+                    <li>Language designed for program transformations</li>
+                    <li>Practical experiments: Yolan and LightScript</li>
+                    <li>New? Do you know something similar?</li>
+                </ul>
+                </section>
+                </section>
+
+
+
+
+
+
+                <section>
+                <section>
+                <h3>Content</h3>
+                <ul style="font-size: 120%; line-height: 150%;">
+                    <li>Introduction</li>
+                    <li><strong>Language experiments:</strong> LightScript/Yolan, Yolan 2, LightScript 2/3, Future: Yolan 3</li>
+                    <li>Conclusion and discussion</li>
+                </ul>
+                </section>
+
+                <section>
+                <h3>LightScript / Yolan &nbsp; <small>2008-2009</small></h3>
+                <ul>
+                    <li>JavaScript/Lisp-like languages for J2ME</li>
+                    <li>Part of my master thesis at University of Copenhagen</li>
+                    <li>Extremely small memory footprint, reasonably fast, dynamic execution</li>
+                    <li>Lessons learned: debuggability matters, too low-end</li>
+                </ul>
+                </section>
+
+                <section>
+                <h3>Yolan 2 &nbsp; <small>spring 2012</small></h3>
+                <ul>
+                    <li>Canonical source</li>
+                    <li>Visual code</li>
+                    <li>Dogfood, self hosted</li>
+                    <li>Hosted on JS-vm</li>
+                    <li>Lessons learned: this dogfood was not good enough, lists-only not rich enough</li>
+                </ul>
+                </section>
+
+                <section>
+                <h3>LightScript 2/3 &nbsp; <small>fall 2012</small></h3>
+                <ul>
+                    <li>Canonical source</li>
+                    <li>Mostly JS-subset, dogfood, self hosted</li>
+                    <li>Combined TDOP-parser + prettyprinter<ul><li>
+                        common pattern in JS/C-like languages</li></ul></li>
+                    <li>Staged computation</li>
+                    <li>Designed for AST-simplicity</li>
+                    <li>Towards common scripting language denominator</li>
+                    <li>Lessons learned: want optional static typing, more tooling</li>
+                </ul>
+                </section>
+
+                <section>
+                <h3>Yolan 3 &nbsp; <small>future</small></h3>
+                <ul>
+                    <li>Canonical source, dogfood</li>
+                    <li>More Clojure-inspired</li>
+                    <li>JS-to-Yolan</li>
+                    <li>hosted on common scripting language denominator<ul><li>
+                        portable core + platform specific extensions</li></ul></li>
+                    <li>(optional) static typing</li>
+                </ul>
+                </section>
+                </section>
+
+                <section>
+                <section>
+                <h3>Content</h3>
+                <ul style="font-size: 120%; line-height: 150%;">
+                    <li>Introduction</li>
+                    <li>Language experiments</li>
+                    <li><strong>Conclusion and discussion</strong></li>
+                </ul>
+                </section>
+                <section>
+                <h3>Conclusion and discussion</h3>
+                <ul style="font-size: 120%; line-height: 150%;">
+                    <li>Critical feedback?</li>
+                    <li>Code tour</li>
+                    <li>Favorite language features, why?</li>
+                </ul>
+                </section>
                 </section>
 
             </div>
