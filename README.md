@@ -1,4 +1,4 @@
-# Presentation: some language experiments
+# ![logo](https://solsort.com/_logo.png) Presentation: some language experiments
 
 Online as slide show at http://solsort.com/2013/berlincompiler
 
